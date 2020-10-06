@@ -1,3 +1,5 @@
 export default  {
-  user: state => state.user
+  first_book: (state) => {
+    return state.books.find(e => e.id == 1)
+  }
 }
